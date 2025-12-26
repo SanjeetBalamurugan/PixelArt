@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "pixelart",
+  "version": "1.0.0",
+  "name": "PixelArt",
+  "description": "Create pixel art in Minecraft from images",
+  "authors": [
+    "NetherAirTune"
+  ],
+  "contact": {
+    "homepage": "https://netherairtunegaming.blogspot.com",
+    "sources": "https://github.com/SanjeetBalamurugan/PixelArt",
+    "issues": "https://github.com/SanjeetBalamurugan/PixelArt/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/pixelart/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.netherairtune.pixelart.PixelArtMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.6",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
