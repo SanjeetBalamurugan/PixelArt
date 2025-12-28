@@ -82,7 +82,7 @@ public class PixelArtMod implements ModInitializer {
         }
 
         ServerPlayerEntity player = (ServerPlayerEntity) source.getEntity();
-        ServerWorld world = player.getServerWorld();
+        ServerWorld world = (ServerWorld) player.getEntityWorld();
         BlockPos pos = player.getBlockPos();
         
         String direction;
@@ -183,7 +183,7 @@ public class PixelArtMod implements ModInitializer {
         }
 
         ServerPlayerEntity player = (ServerPlayerEntity) source.getEntity();
-        ServerWorld world = player.getServerWorld();
+        ServerWorld world = (ServerWorld) player.getEntityWorld();
         
         renderer.undoLastRender(player, world);
         
